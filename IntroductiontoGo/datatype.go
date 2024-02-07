@@ -30,6 +30,7 @@ func main(){
 	   y, z:= 9,10
 
 	   fmt.Println(y,z)
-
+           
+	   //if you have declared a variable you should use it otherwise compiler will give an error
 }
 
