@@ -11,14 +11,14 @@ func binarySearch(arr []int, size, key int) int {
 	for start <= end {
 		if arr[mid] == key {
 			return mid
-		}
-		if key > mid {
+
+		} else if key > mid {
 			start = mid + 1
 		} else {
 
 			end = mid - 1
 		}
-		mid = (start + end) / 2
+		mid = start + (end-start)/2
 	}
 	return -1
 }
