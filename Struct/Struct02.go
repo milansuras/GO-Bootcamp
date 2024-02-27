@@ -15,6 +15,8 @@ func main() {
 	fmt.Println(c2)
 	fmt.Println(c2.country)
 	var c3 City_List
+	c4 := City_List{"Sydney", "New South Wales", "Australia"}
+	fmt.Println(c4)
 
 	fmt.Println(c3.city)
 }
