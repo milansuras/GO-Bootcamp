@@ -17,5 +17,5 @@ func main() {
 
 	pointer := &age
 	fmt.Println("value of address age:=", *pointer)
-	
+
 }
