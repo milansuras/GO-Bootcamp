@@ -5,7 +5,7 @@ import "fmt"
 func even(arr []int) int {
 	var count int
 	for i := 0; i < len(arr); i++ {
-		if arr[i]%2 != 0 {
+		if arr[i]%2 == 0 {
 			count++
 		}
 	}
@@ -17,5 +17,5 @@ func main() {
 	fmt.Println(arr)
 
 	result := even(arr)
-	fmt.Println("No of odd elements in the array:=", result)
+	fmt.Println("No of even elements in the array:=", result)
 }
