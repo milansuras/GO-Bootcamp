@@ -2,18 +2,20 @@ package main
 
 import "fmt"
 
-func main(){
+func main() {
 	// A map is an unordered collection of key value pair
 
 	//declaring map
-
-	// varname := map keyword[key type]value type
-
-	nameAge:=maap[string]int{
-		"name1":25,
-		"name2":16.
+	var m map[string]int // map keyword map [key type] value type
+	fmt.Println(m)
+	if m == nil {
+		fmt.Println("Map is empty")
+	} else {
+		fmt.Println("Map is not empty")
 	}
 
-	// zero value for a map is nil
-	fmt.Pritln(nameAge["name1"])
+	//adding key to a nil map but it will throw runtime error
+	//m["ten"] = 10
+	fmt.Println(m)
+
 }
